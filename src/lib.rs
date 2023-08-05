@@ -97,6 +97,7 @@ mod common {
     pub mod flexpwm;
     pub mod gpio;
     pub mod gpt;
+    pub mod qdc;
     pub mod lpi2c;
     pub mod lpspi;
     pub mod lpuart;
@@ -107,7 +108,7 @@ mod common {
 
 // These common drivers have no associated chip APIs, so
 // export them directly.
-pub use common::{flexpwm, gpio, gpt, lpi2c, lpspi, lpuart, pit, snvs, timer};
+pub use common::{flexpwm, gpio, gpt, qdc, lpi2c, lpspi, lpuart, pit, snvs, timer};
 
 /// Clock control module.
 ///
